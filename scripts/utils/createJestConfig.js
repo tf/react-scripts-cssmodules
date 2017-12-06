@@ -52,6 +52,7 @@ module.exports = (resolve, rootDir, isEjecting) => {
       'jsx',
       'node',
     ],
+    moduleNameMapper: {"\\.(css|sass)$": "identity-obj-proxy"}
   };
   if (rootDir) {
     config.rootDir = rootDir;
